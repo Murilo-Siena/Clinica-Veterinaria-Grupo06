@@ -111,11 +111,3 @@ erDiagram
 | Produto → Item Atendimento | 1:N | Um produto pode aparecer em vários itens de atendimento. |
 
 > Observação: a tabela `ITEM_ATENDIMENTO` resolve a relação de muitos-para-muitos entre `ATENDIMENTO` e `PRODUTO`, pois um atendimento pode utilizar vários produtos e um produto pode ser utilizado em vários atendimentos.
-
-## 3. Exemplos:
-
-```text
-v1.0__create_table_cliente.sql
-v1.0__insert_into_cliente.sql
-v1.0__alter_table_animal.sql
-```
