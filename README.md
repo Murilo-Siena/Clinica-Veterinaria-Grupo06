@@ -117,4 +117,5 @@ erDiagram
 ```text
 v1.0__create_table_cliente.sql
 v1.0__insert_into_cliente.sql
+v1.0__alter_table_animal.sql
 ```
