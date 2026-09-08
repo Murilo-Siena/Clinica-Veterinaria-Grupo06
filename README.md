@@ -115,7 +115,6 @@ erDiagram
 ## 3. Exemplo:
 
 ```text
-v1__create_table_cliente.sql
-v1__insert_into_cliente.sql
-v1__update_produto.sql
+v1.0__create_table_cliente.sql
+v1.0__insert_into_cliente.sql
 ```
