@@ -1,3 +1,6 @@
 ALTER TABLE animal
 ADD CONSTRAINT check_sexo
 CHECK (sexo IN ('M', 'F'));
+
+ALTER TABLE animal
+ALTER COLUMN sexo SET NOT NULL;
