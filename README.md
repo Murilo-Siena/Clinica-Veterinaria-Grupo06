@@ -112,7 +112,7 @@ erDiagram
 
 > Observação: a tabela `ITEM_ATENDIMENTO` resolve a relação de muitos-para-muitos entre `ATENDIMENTO` e `PRODUTO`, pois um atendimento pode utilizar vários produtos e um produto pode ser utilizado em vários atendimentos.
 
-## 3. Exemplo:
+## 3. Exemplos:
 
 ```text
 v1.0__create_table_cliente.sql
