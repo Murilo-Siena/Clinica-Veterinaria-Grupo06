@@ -1,4 +1,4 @@
-CREATE TABLE produto (
+CREATE TABLE IF DO NOT EXISTS produto (
     id_produto BIGINT GENERATED ALWAYS AS IDENTITY,
     nome VARCHAR(100),
     tipo VARCHAR(50),
