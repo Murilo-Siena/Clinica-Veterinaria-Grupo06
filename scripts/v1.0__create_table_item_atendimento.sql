@@ -1,4 +1,4 @@
-CREATE TABLE IF DO NOT EXISTS item_atendimento (
+CREATE TABLE IF NOT EXISTS item_atendimento (
     id_item BIGINT GENERATED ALWAYS AS IDENTITY,
 
     id_atendimento BIGINT NOT NULL,
