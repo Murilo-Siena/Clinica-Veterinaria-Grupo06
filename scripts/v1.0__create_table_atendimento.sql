@@ -1,4 +1,4 @@
-CREATE TABLE IF DO NOT EXISTS atendimento (
+CREATE TABLE IF NOT EXISTS atendimento (
     id_atendimento BIGINT GENERATED ALWAYS AS IDENTITY,
     data DATE,
     descricao_consulta TEXT,
