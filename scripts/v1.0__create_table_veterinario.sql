@@ -1,4 +1,4 @@
-CREATE TABLE IF DO NOT EXISTS veterinario (
+CREATE TABLE IF NOT EXISTS veterinario (
     id_veterinario BIGINT GENERATED ALWAYS AS IDENTITY,
     nome VARCHAR(100),
     cpf VARCHAR(14) UNIQUE,
