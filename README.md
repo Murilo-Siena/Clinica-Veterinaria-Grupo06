@@ -111,3 +111,5 @@ erDiagram
 | Produto → Item Atendimento | 1:N | Um produto pode aparecer em vários itens de atendimento. |
 
 > Observação: a tabela `ITEM_ATENDIMENTO` resolve a relação de muitos-para-muitos entre `ATENDIMENTO` e `PRODUTO`, pois um atendimento pode utilizar vários produtos e um produto pode ser utilizado em vários atendimentos.
+
+## Link do site: veterinario-mocha.vercel.app
