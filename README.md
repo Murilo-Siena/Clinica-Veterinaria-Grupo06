@@ -23,7 +23,8 @@ O modelo utiliza as seguintes entidades:
 - **Veterinário** — profissional responsável pelo atendimento.
 - **Atendimento** — registro da consulta/procedimento.
 - **Produto** — produto disponível na clínica.
-- **Item Atendimento** — tabela associativa que registra quais produtos foram utilizados em cada atendimento.
+- **Serviço** — serviços oferecidos pela clínica (como banho e tosa).
+- **Item Atendimento** — tabela que associa os vários produtos a vários atendimentos, resolvendo N para N.
 
 ### Diagrama ER em Mermaid
 
