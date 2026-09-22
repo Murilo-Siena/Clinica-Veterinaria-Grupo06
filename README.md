@@ -112,4 +112,4 @@ erDiagram
 
 > Observação: a tabela `ITEM_ATENDIMENTO` resolve a relação de muitos-para-muitos entre `ATENDIMENTO` e `PRODUTO`, pois um atendimento pode utilizar vários produtos e um produto pode ser utilizado em vários atendimentos.
 
-## Link do site: veterinario-mocha.vercel.app
+## Link do site: <veterinario-mocha.vercel.app>
