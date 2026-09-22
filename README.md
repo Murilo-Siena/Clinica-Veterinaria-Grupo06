@@ -1,6 +1,6 @@
 # Clínica Veterinária — Banco de Dados PostgreSQL
 
-### Link do protótipo de tela principal: https://veterinario-mocha.vercel.app/
+### [Link do protótipo de tela principal](https://veterinario-mocha.vercel.app/)
 
 ## 1. Apresentação do projeto
 
