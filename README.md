@@ -94,7 +94,7 @@ erDiagram
         integer pontos
     }
 
-    ITEM ATENDIMENTO {
+    ITEM_ATENDIMENTO {
         bigint id_item PK
         bigint id_atendimento FK
         bigint id_produto FK
@@ -110,7 +110,7 @@ erDiagram
     ATENDENTE ||--o{ ATENDIMENTO : registra
     VETERINARIO ||--o{ ATENDIMENTO : realiza
 
-    ATENDIMENTO ||--o{ ITEM : possui
-    PRODUTO ||--o{ ITEM : utilizado
-    SERVICO ||--o{ ITEM : inclui
+    ATENDIMENTO ||--o{ ITEM_ATENDIMENTO : possui
+    PRODUTO ||--o{ ITEM_ATENDIMENTO : utilizado
+    SERVICO ||--o{ ITEM_ATENDIMENTO : inclui
 ```
