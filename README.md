@@ -29,56 +29,25 @@ O modelo utiliza as seguintes entidades:
 
 ```mermaid
 erDiagram
-    CLIENTE ||--o{ ANIMAL : possui
-    CLIENTE ||--o{ ATENDIMENTO : realiza
-    ANIMAL ||--o{ ATENDIMENTO : recebe
-    ATENDENTE ||--o{ ATENDIMENTO : registra
-    VETERINARIO ||--o{ ATENDIMENTO : responsavel
-    ATENDIMENTO ||--o{ ITEM_ATENDIMENTO : utiliza
-    PRODUTO ||--o{ ITEM_ATENDIMENTO : referencia
 
     CLIENTE {
         bigint id_cliente PK
-        varchar nome
-        varchar cpf UK
-        varchar telefone
-        varchar endereco
+        varchar(100) nome
+        varchar(14) cpf
+        varchar(20) telefone
+        varchar(200) endereco
+        integer xp
+        integer pontos
     }
 
     ANIMAL {
         bigint id_animal PK
         bigint id_cliente FK
-        varchar nome
-        varchar especie
-        varchar raca
-        varchar sexo
+        varchar(100) nome
+        varchar(50) especie
+        varchar(50) raca
+        varchar(20) sexo
         date data_nascimento
-    }
-
-    ATENDENTE {
-        bigint id_atendente PK
-        varchar nome
-        varchar cpf UK
-        varchar telefone
-    }
-
-    VETERINARIO {
-        bigint id_veterinario PK
-        varchar nome
-        varchar cpf UK
-        varchar crmv UK
-        varchar especialidade
-        varchar telefone
-    }
-
-    PRODUTO {
-        bigint id_produto PK
-        varchar nome
-        varchar tipo
-        varchar marca
-        text descricao
-        numeric valor_compra
-        integer estoque
     }
 
     ATENDIMENTO {
@@ -91,11 +60,57 @@ erDiagram
         bigint id_veterinario FK
     }
 
-    ITEM_ATENDIMENTO {
+    ATENDENTE {
+        bigint id_atendente PK
+        varchar(100) nome
+        varchar(14) cpf
+        varchar(20) telefone
+    }
+
+    VETERINARIO {
+        bigint id_veterinario PK
+        varchar(100) nome
+        varchar(14) cpf
+        varchar(30) crmv
+        varchar(100) especialidade
+        varchar(20) telefone
+    }
+
+    PRODUTO {
+        bigint id_produto PK
+        varchar(100) nome
+        varchar(50) tipo
+        varchar(100) marca
+        text descricao
+        numeric(10,2) valor_compra
+        integer estoque
+        integer pontos
+    }
+
+    SERVICO {
+        integer id_servico PK
+        varchar(100) nome
+        numeric(10,2) valor
+        integer pontos
+    }
+
+    ITEM ATENDIMENTO {
         bigint id_item PK
         bigint id_atendimento FK
         bigint id_produto FK
-        numeric valor_utilizado
+        numeric(10,2) valor_utilizado
         integer quantidade
+        integer id_servico FK
     }
+
+
+    CLIENTE ||--o{ ANIMAL : possui
+    CLIENTE ||--o{ ATENDIMENTO : realiza
+    ANIMAL ||--o{ ATENDIMENTO : recebe
+    ATENDENTE ||--o{ ATENDIMENTO : registra
+    VETERINARIO ||--o{ ATENDIMENTO : realiza
+
+    ATENDIMENTO ||--o{ ITEM : possui
+    PRODUTO ||--o{ ITEM : utilizado
+    SERVICO ||--o{ ITEM : inclui
 ```
