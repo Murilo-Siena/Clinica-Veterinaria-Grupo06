@@ -99,19 +99,3 @@ erDiagram
         integer quantidade
     }
 ```
-
-### Cardinalidades
-
-| Relacionamento | Cardinalidade | Explicação |
-|---|---|---|
-| Cliente → Animal | 1:N | Um cliente pode possuir vários animais. |
-| Cliente → Atendimento | 1:N | Um cliente pode ter vários atendimentos registrados. |
-| Animal → Atendimento | 1:N | Um animal pode receber vários atendimentos. |
-| Atendente → Atendimento | 1:N | Um atendente pode registrar vários atendimentos. |
-| Veterinário → Atendimento | 1:N | Um veterinário pode ser responsável por vários atendimentos. |
-| Atendimento → Item Atendimento | 1:N | Um atendimento pode utilizar vários itens. |
-| Produto → Item Atendimento | 1:N | Um produto pode aparecer em vários itens de atendimento. |
-
-> Observação: a tabela `ITEM_ATENDIMENTO` resolve a relação de muitos-para-muitos entre `ATENDIMENTO` e `PRODUTO`, pois um atendimento pode utilizar vários produtos e um produto pode ser utilizado em vários atendimentos.
-
-
